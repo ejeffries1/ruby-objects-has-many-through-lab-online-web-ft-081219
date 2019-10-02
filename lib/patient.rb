@@ -23,7 +23,7 @@ class Patient
   
   def doctors
     appointments.select do |appointment|
-      appointment.doctor
+      appointment.doctor == self
     end
   end
 end
